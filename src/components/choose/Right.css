@@ -1,0 +1,213 @@
+.hero-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PHONE */
+
+.phone {
+  background: white;
+  border: 8px solid #1e3a8a;
+  border-radius: 40px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: none;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+  z-index: 1;
+  width: 280px;
+  height: 410px;
+  margin: 0 auto;
+}
+
+.phone-content {
+  width: 280px;
+  
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* CHAT */
+
+.chat-header h2 {
+  margin-top: 10px;
+  color: #0f172a;
+   box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.chat-header p {
+  margin-top: 20px;
+  color: #475569;
+  border-radius: 15px;
+   box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.chat {
+  max-width: 80%;
+  padding: 8px;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+   box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.user {
+  background: #2563eb;
+  color: white;
+  margin-left: auto;
+}
+
+.bot {
+  background: #f1f5f9;
+  color: #0f172a;
+   box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+.bot2 {
+  background: #f1f5f9;
+  color: #0f172a;
+  width: 20px;
+  height: 10px;
+   box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+/* FLOATING ICONS */
+
+.floating-card {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,.1);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-card span {
+  font-size: 28px;
+}
+
+.floating-card p {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* POSITIONS */
+
+.ai-card {
+  top: 5%;
+  left: 10%;
+}
+
+.schedule-card {
+  bottom: 25%;
+  left: 5%;
+}
+
+.doctor-card {
+  top: 18%;
+  right: 5%;
+}
+
+.secure-card {
+  bottom: 8%;
+  right: 5%;
+}
+
+/* FLOAT EFFECT */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+  .hero-right {
+    width: 100%;
+    flex-direction: column;
+   
+  }
+
+  .phone {
+    width: 300px;
+    height: 400px;
+  }
+
+  .floating-card {
+    width: 90px;
+    height: 90px;
+  }
+  @media (max-width: 992px) {
+  .hero-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;   /* align everything to the left */
+    justify-content: flex-start;
+   
+  }
+
+}
+
+}
+
+@media (max-width: 600px) {
+
+  .hero-right{
+     padding-left: 0%;
+  }
+  .phone {
+    width: 280px;
+    height: 400px;
+    margin-left: 25%;
+  }
+
+    .floating-card {
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+  }
+  
+  /* Force all floating cards to the left */
+  .floating-card {
+    left: 0 !important;        /* override any right positioning */
+    right: auto !important;
+  }
+
+  .ai-card {
+    top: 3%;
+  }
+
+  .schedule-card {
+    bottom: 27%;
+  }
+
+  .doctor-card {
+    top: 23%;
+  }
+
+  .secure-card {
+    bottom: 6%;
+  }
+}

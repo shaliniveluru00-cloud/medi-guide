@@ -1,0 +1,66 @@
+/* Navbar.css */
+
+.navbar {
+  height: 70px;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlinks{
+  
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+.navlink{
+  text-decoration: none;   /* remove underline */
+  color: black;          /* inherit parent color */
+  font-weight: bold;
+}
+.navlink:hover{
+  text-decoration: underline;
+}
+.navlinks ul{
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    gap: 50px;
+    font-size: 19px;
+}
+.navlinks button {
+    height: 40px;
+  padding: 0px 29px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#mg{
+  display: flex;
+}
+#mg img{
+  height: 45px;
+}
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    margin-left: 0;
+  }
+
+  .navlinks {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navlinks ul {
+    gap: 15px;
+    font-size: 16px;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

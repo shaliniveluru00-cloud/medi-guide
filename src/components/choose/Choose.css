@@ -1,0 +1,26 @@
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.choose {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  background: #f4f8ff;
+}
+
+@media (max-width: 992px) {
+  .choose {
+    flex-direction: column; /* mobile: stack vertically */
+    align-items: stretch;
+   
+  }
+}

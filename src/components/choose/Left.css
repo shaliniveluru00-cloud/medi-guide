@@ -1,0 +1,119 @@
+
+#left{
+    flex: 1;
+  margin: 0 auto;
+  padding: 20px;
+}
+#head {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  color: #0f2557;
+  max-width: 650px;
+}
+#topmost{
+    font-size: smaller;
+    background-color:#c5ddf6;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    padding: 5px;
+    color: #007bff;          
+  transition: background-color 0.3s ease;
+}
+#topmost i {
+  margin-right: 8px; /* adds space between icon and text */
+}
+#topmost:hover{
+    background-color:#a2caf6;
+}
+#left > p {
+  font-size: 1.4rem;
+  color: #475569;
+  max-width: 650px;
+}
+#secure{
+    font-size: 15px;
+    margin-left: 100px;
+    color: #007bff;         
+    background-color:#c5ddf6;
+    border-radius: 25px;
+  transition: background-color 0.3s ease;
+   padding: 5px;
+}
+#secure i{
+  color: rgb(60, 208, 60);
+}
+#btn{
+    display: flex;
+    gap: 25px;
+     margin-right: 20px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+#startconvo{
+    /* Button.css */
+  background-color: #007bff;   /* Blue background */
+  color: white;                /* White text */
+  border: none;                /* Remove default border */
+  border-radius: 8px;          /* Rounded corners */
+  padding: 10px 20px;          /* Space inside button */
+  display: flex;               /* Align icon + text */
+  align-items: center;         /* Vertical center */
+  gap: 8px;                    /* Space between icon and text */
+  font-size: 16px;             /* Text size */
+  cursor: pointer;             /* Pointer on hover */
+  transition: background-color 0.3s ease;
+   
+}
+#startconvo:hover {
+  background-color: #0056b3;   /* Darker blue on hover */
+}
+#startconvo i {
+  font-size: 20px;
+}
+#voiceip{
+    padding: 12px 12px ;
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+     display: flex;
+    border: none;
+    gap: 30px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+#voiceip i{
+    color: darkblue;
+    font-size: medium;
+    margin-left: 5px;
+    font-weight: 100px;
+    text-shadow: 0 0 1px white;
+    
+}
+#voiceip:hover {
+  background-color: rgb(209, 219, 228);   /* Darker blue on hover */
+}
+@media (max-width: 768px) {
+  #head
+   { font-size: 1.8rem; }
+  p
+   { font-size: 1rem; }
+  #btn 
+  { flex-direction: column; 
+    gap: 15px; 
+    }
+}
+@media (max-width: 992px) {
+  #head {
+    font-size: 2.5rem;
+  }
+  #secure{
+    margin-left: 0px;
+  }
+  #btn {
+    justify-content: center;
+    margin: 30px 0;
+  }
+}

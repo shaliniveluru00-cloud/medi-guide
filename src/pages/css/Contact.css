@@ -1,0 +1,80 @@
+#con{
+    background-color: aliceblue;
+}
+.contact{
+    margin: 50px;
+    margin-top: 0px;
+    padding-top: 40px;
+   padding: 2px 80px;
+    background-color: antiquewhite;
+    line-height: 20px;
+    border-radius: 25px;
+    width: 350px;
+    left: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.navbar{
+    background-color: rgb(227, 229, 232);
+}
+#in{
+    display: flex;
+}
+.contact-container{
+  display: flex;
+  height: 430px;
+  align-items: center; 
+  margin: 2%;
+  padding: 30px;
+  padding-bottom: 50px;
+  background-color: aliceblue;
+}
+.contact-info{
+    box-shadow: 0 4px 8px rgba(0,0,0,1.5);
+    border-radius: 8px;
+    padding: 30px;
+    margin-left:230px; 
+}
+.contact-info h3{
+    font-size: large;
+}
+.contact-form{
+    margin: 0 auto;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,1.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,1.5);
+    border-radius: 8px;
+    padding: 30px;
+}
+.contact-form textarea{
+    width: 100%;       /* makes it span the full width of the form */
+  max-width: 600px;  /* optional: limit maximum width */
+  resize: vertical;  /* allow only vertical resizing by user */
+  padding: 10px;     /* add some inner spacing */
+  font-size: 1.1rem;  
+}
+.contact-form input{
+    border-radius: 4px;
+    padding: 2px;
+}
+.contact-form button{
+    border-radius: 4px;
+    padding: 6px;
+    font-weight: bold;
+    background-color: #80baf9;
+}
+@media (max-width: 992px){
+    .contact-container{
+    flex-direction: column;
+    height: auto;
+    gap: 50px;
+}
+    .contact{
+        left: 0%;
+        margin: 9px;
+    }
+}
